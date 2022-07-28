@@ -28,6 +28,7 @@ setup(
     url=APP_URL,
     package_dir={"": "src"},
     packages=find_packages("src"),
+    package_data={'': ['*.html']},
     entry_points={
         "console_scripts": [
             "wireviz=wireviz.wv_cli:wireviz",
